@@ -36,7 +36,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+    }
+
     companion object {
         const val KEY_RESULT = "key for result"
     }
+
 }

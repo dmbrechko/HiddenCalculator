@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <EditText
+        android:id="@+id/firstET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal_ET"
+        android:ems="10"
+        android:hint="@string/first_op"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/secondET"
+        app:layout_constraintEnd_toStartOf="@+id/secondET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondET" />
+
+    <EditText
+        android:id="@+id/secondET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal_ET"
+        android:ems="10"
+        android:hint="@string/second_op"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firstET"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/divBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multBTN"
+        app:layout_constraintTop_toBottomOf="@+id/secondET" />
+
+    <Button
+        android:id="@+id/multBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mult"
+        app:layout_constraintBottom_toBottomOf="@+id/divBTN"
+        app:layout_constraintEnd_toStartOf="@+id/divBTN"
+        app:layout_constraintStart_toEndOf="@+id/minusBNT"
+        app:layout_constraintTop_toTopOf="@+id/divBTN" />
+
+    <Button
+        android:id="@+id/minusBNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        app:layout_constraintBottom_toBottomOf="@+id/multBTN"
+        app:layout_constraintEnd_toStartOf="@+id/multBTN"
+        app:layout_constraintStart_toEndOf="@+id/plusBTN"
+        app:layout_constraintTop_toTopOf="@+id/multBTN" />
+
+    <Button
+        android:id="@+id/plusBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/minusBNT"
+        app:layout_constraintEnd_toStartOf="@+id/minusBNT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/minusBNT" />
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multBTN" />
+
+    <Button
+        android:id="@+id/send_dataBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_data"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

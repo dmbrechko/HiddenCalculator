@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HiddenCalculator</string>
+    <string name="result">Result: </string>
+    <string name="result_placeholder">Result: %s</string>
+    <string name="calculator">Calculator</string>
+    <string name="first_op">First op</string>
+    <string name="second_op">Second op</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="mult">*</string>
+    <string name="div">/</string>
+    <string name="send_data">Send data</string>
+    <string name="wrong_input">Wrong input</string>
+    <string name="we_have_nothing_to_send">We have nothing to send, calculate something first</string>
+</resources>
